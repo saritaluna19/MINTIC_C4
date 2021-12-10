@@ -1,25 +1,25 @@
 enum Enum_Rol{
-    estudiante="Estudiante",
-    lider="Lider",
-    administrador="Administrador",
+    ESTUDIANTE='ESTUDIANTE',
+    LIDER='LIDER',
+    ADMINISTRADOR='ADMINISTRADOR',
 }
 
-enum Enum_Estado{
-    autorizado="Autorizado",
-    pendiente="Pendiente",
-    noAutorizado="No autorizado",
+enum Enum_EstadoUsuario{
+    PENDIENTE='PENDIENTE',
+    AUTORIZADO='AUTORIZADO',
+    NO_AUTORIZADO='NO_AUTORIZADO',
 }
 
 enum Enum_EstadoProyecto{
-    activo="Activo",
-    inactivo="Inactivo",
+    ACTIVO='ACTIVO',
+    INACTIVO='INACTIVO',
 }
 
 enum Enum_FaseProyecto{
-    iniciado="Iniciado",
-    desarrolo="En desarollo",
-    terminado="Terminado",
-    nula='',
+    INICIADO='INICIADO',
+    DESARROLLO='DESARROLLO',
+    TERMINADO='TERMINADO',
+    NULO='',
 }
 
 enum Enum_EstadoInscripcion{
@@ -27,4 +27,4 @@ enum Enum_EstadoInscripcion{
     rechazada="Rechazada",
 }
 
-export {Enum_Rol, Enum_Estado, Enum_EstadoProyecto, Enum_FaseProyecto, Enum_EstadoInscripcion};
+export {Enum_Rol, Enum_EstadoUsuario, Enum_EstadoProyecto, Enum_FaseProyecto, Enum_EstadoInscripcion};
