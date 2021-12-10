@@ -12,7 +12,7 @@ const typeDefs = gql`
 
     enum Enum_Rol{
         ESTUDIANTE
-        LIDER
+       LIDER
         ADMINISTRADOR
     }
     enum Enum_EstadoProyecto{
