@@ -30,7 +30,7 @@ import Profile from 'pages/profile';
 // import PrivateRoute from 'components/PrivateRoute';
 
 const httpLink = createHttpLink({
-  uri: 'https://servidor-gql-mintic.herokuapp.com/graphql',
+  uri: 'https://servidor-gql-mintic-c4.herokuapp.com/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {

@@ -16,6 +16,8 @@ const PrivateLayout = () => {
   const [refreshToken, { data: dataMutation, loading: loadingMutation }] =
     useMutation(REFRESH_TOKEN);
 
+  // eslint-disable-next-line no-console
+  console.log(refreshToken);
   useEffect(() => {
     refreshToken();
   }, [refreshToken]);
@@ -33,7 +35,6 @@ const PrivateLayout = () => {
   }, [dataMutation, setToken, loadingAuth, navigate]);
 
   if (loadingMutation || loadingAuth) return <div>Loading...</div>;
-
   return (
     <div className='flex flex-col md:flex-row flex-no-wrap h-screen'>
       <Sidebar />
